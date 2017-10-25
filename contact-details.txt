@@ -1,2 +1,44 @@
-name: first last
-email: name@email.com
+name: dror virt
+email: drorvt@email.com
+
+exercise1
+-----------------
+problem: The program 'curl' is currently not installed.  You can install it by typing:
+fix : sudo apt-get install curl
+
+exercise2
+-----------------
+curl http://www.ascii-art.de/ascii/ab/007.txt
+
+problem  get error  : "HTTP/1.1 404 Not Found"
+
+fix : delete "127.0.0.1 www.ascii-art.de" from "/etc/hosts"
+
+
+exercise3
+-----------------
+1.we get only "Hello world"
+
+2. Add messge  "Good luck with Exercise3 from OpsSchool Team."
+
+sudo vim /var/www/index.html 
+
+exercise4
+-----------------
+step 1: verify ping beetwin servers (ping 192.168.100.11,ping 192.168.100.12)
+step 2 : add to "/etc/hosts" on server1 and server2
+192.168.100.11 server2
+192.168.100.10 server1
+
+exercise5
+-----------------
+1.perform on servers
+
+***The first thing you’ll need to do is make sure you’ve run the keygen command to generate the keys:
+
+ssh-keygen -t rsa
+
+***Then use this command to push the key to the remote server, modifying it to match your server name.
+
+cat ~/.ssh/id_rsa.pub | ssh vagrant@server2 'cat >> .ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh vagrant@server1 'cat >> .ssh/authorized_keys'
