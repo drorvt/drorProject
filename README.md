@@ -1,8 +1,5 @@
 
-ssssssssssssssss
-
-
-s# OpsSchool candidates assignment
+# OpsSchool candidates assignment
 
 #### INTRO
 Hello and welcome to opsSchool home assignment.
